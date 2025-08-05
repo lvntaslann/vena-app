@@ -1,0 +1,38 @@
+name: vena
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+  http: ^1.4.0
+  flutter_bloc: ^9.1.1
+  intl: 0.19.0
+  equatable: ^2.0.7
+  flutter_localizations:
+    sdk: flutter
+  shimmer: ^3.0.0
+  animated_text_kit: ^4.2.3
+  confetti: ^0.8.0
+  uuid: ^4.0.0
+  flutter_slidable: ^3.1.2
+  url_launcher: ^6.3.1
+  webview_flutter: ^4.10.0
+  google_sign_in: ^6.2.2
+  firebase_auth: ^6.0.0
+  shadcn_ui: ^0.16.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/

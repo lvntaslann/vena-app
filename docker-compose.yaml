@@ -1,0 +1,13 @@
+services:
+  planner-api:
+    build:
+      context: ./ai-agent
+      dockerfile: ../Dockerfile
+    container_name: planner-api
+    ports:
+      - "7000:7000"
+    env_file:
+      - ./ai-agent/.env
+    volumes:
+      - ./ai-agent:/app
+    restart: unless-stopped
