@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vena/cubit/calendar/calendar_cubit.dart';
-import 'package:vena/pages/splash/splash_screen.dart';
-import 'package:vena/services/calendar/calendar_services.dart';
-import 'package:vena/services/lesson/lesson_services.dart';
-import 'cubit/auth/auth_cubit.dart';
-import 'cubit/lesson/lesson_cubit.dart';
-import 'services/auth/auth_services.dart';
+import 'package:vena/features/calendar/logic/cubit/calendar_cubit.dart';
+import 'package:vena/features/splash/presentation/pages/splash_screen.dart';
+import 'package:vena/features/calendar/data/services/calendar_services.dart';
+import 'package:vena/features/lesson/data/services/lesson_services.dart';
+import 'features/auth/logic/cubit/auth_cubit.dart';
+import 'features/lesson/logic/cubit/lesson_cubit.dart';
+import 'features/auth/data/services/auth_services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
