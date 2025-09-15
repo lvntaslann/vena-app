@@ -89,54 +89,78 @@ Ayrıca, öğrenciler diledikleri zaman seçtikleri ders konularına yönelik ka
 
 ```
 /frontend
+│
 ├── lib
-│   ├── main.dart
+│   ├── core
+│   │   ├── constants
+│   │   ├── utils
+│   │   ├── themes
+│   │   └── widgets
 │   │
-│   ├── model
-│   │   ├── user
-│   │   │   └── user_model.dart
-│   │   ├── calendar
-│   │   │   ├── study_meta.dart
-│   │   │   ├── study_plan.dart
-│   │   │   └── study_session.dart
-│   │   └── lessons
-│   │       └── lessons.dart
-│   │
-│   ├── services
-│   │   ├── auth_services.dart
-│   │   ├── calendar_services.dart
-│   │   └── lesson_services.dart
-│   │
-│   ├── cubit
-│   │   ├── lesson
-│   │   │   ├── lesson_cubit.dart
-│   │   │   └── lesson_state.dart
-│   │   ├── calendar
-│   │   │   ├── calendar_cubit.dart
-│   │   │   └── calendar_state.dart
+│   ├── features
 │   │   ├── auth
-│   │   │   ├── auth_cubit.dart
-│   │   │   └── auth_state.dart
-│   │
-│   ├── pages
-│   │   ├── auth
-│   │   │   ├── login_page.dart
-│   │   │   └── signup_page.dart
-│   │   ├── home
-│   │   │   └── home_page.dart
-│   │   ├── calendarpage
-│   │   │   └── calendar_page.dart
+│   │   │   ├── data
+│   │   │   │   ├── model
+│   │   │   │   │   └── user_model.dart
+│   │   │   │   └── services
+│   │   │   │       └── auth_services.dart
+│   │   │   ├── logic
+│   │   │   │   ├── auth_cubit.dart
+│   │   │   │   └── auth_state.dart
+│   │   │   └── presentation
+│   │   │       ├── pages
+│   │   │       │   ├── login_page.dart
+│   │   │       │   └── signup_page.dart
+│   │   │       └── widgets
+│   │   │
+│   │   ├── calendar
+│   │   │   ├── data
+│   │   │   │   ├── model
+│   │   │   │   │   ├── study_meta.dart
+│   │   │   │   │   ├── study_plan.dart
+│   │   │   │   │   └── study_session.dart
+│   │   │   │   └── services
+│   │   │   │       └── calendar_services.dart
+│   │   │   ├── logic
+│   │   │   │   ├── calendar_cubit.dart
+│   │   │   │   └── calendar_state.dart
+│   │   │   └── presentation
+│   │   │       ├── pages
+│   │   │       │   └── calendar_page.dart
+│   │   │       └── widgets
+│   │   │
+│   │   ├── lessons
+│   │   │   ├── data
+│   │   │   │   ├── model
+│   │   │   │   │   └── lessons.dart
+│   │   │   │   └── services
+│   │   │   │       └── lesson_services.dart
+│   │   │   ├── logic
+│   │   │   │   ├── lesson_cubit.dart
+│   │   │   │   └── lesson_state.dart
+│   │   │   └── presentation
+│   │   │       ├── pages
+│   │   │       │   └── lessons_page.dart
+│   │   │       └── widgets
+│   │   │
+│   │   ├── settings
+│   │   │   └── presentation
+│   │   │       ├── pages
+│   │   │       │   └── settings_page.dart
+│   │   │       └── widgets
+│   │   │
 │   │   ├── splash
-│   │   │   └── splash_screen.dart
-│   │   ├── lessonspage
-│   │   │   └── lessons_page.dart
-│   │   └── settings
-│   │       └── settings_page.dart
+│   │   │   └── presentation
+│   │   │       └── pages
+│   │   │           └── splash_screen.dart
+│   │   │
+│   │   └── home
+│   │       └── presentation
+│   │           ├── pages
+│   │           │   └── home_page.dart
+│   │           └── widgets
 │   │
-│   ├── utils
-│   ├── constants
-│   ├── themes
-│   └── widgets
+
 ```
 
 ---
